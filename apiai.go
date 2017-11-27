@@ -18,7 +18,7 @@ type APIAI struct {
 	SessionID string
 }
 
-const apiEndpoint string = "https://api.api.ai/v1/%s?v=%s"
+const apiEndpoint string = "https://api.dialogflow.com/v1/%s?v=%s"
 
 // SendText is useful to send a simple query to API.ai
 func (api APIAI) SendText(text string) (ResponseStruct, error) {
