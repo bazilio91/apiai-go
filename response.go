@@ -30,15 +30,15 @@ type Fulfillment struct {
 
 // Result is the result of NLP
 type Result struct {
-	Action           string            `json:"action"`
-	ActionIncomplete bool              `json:"actionIncomplete"`
-	Contexts         []Context         `json:"contexts"`
-	Fulfillment      Fulfillment       `json:"fulfillment"`
-	Metadata         Metadata          `json:"metadata"`
-	Parameters       map[string]string `json:"parameters"`
-	ResolvedQuery    string            `json:"resolvedQuery"`
-	Score            float32           `json:"score"`
-	Source           string            `json:"source"`
+	Action           string                 `json:"action"`
+	ActionIncomplete bool                   `json:"actionIncomplete"`
+	Contexts         []Context              `json:"contexts"`
+	Fulfillment      Fulfillment            `json:"fulfillment"`
+	Metadata         Metadata               `json:"metadata"`
+	Parameters       map[string]interface{} `json:"parameters"`
+	ResolvedQuery    string                 `json:"resolvedQuery"`
+	Score            float32                `json:"score"`
+	Source           string                 `json:"source"`
 }
 
 // ResponseStruct wraps the response from API.ai. Please see. https://docs.api.ai/docs/query#response

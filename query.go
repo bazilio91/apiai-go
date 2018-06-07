@@ -2,9 +2,9 @@ package apiaigo
 
 // Context object
 type Context struct {
-	Lifespan   int               `json:"lifespan"`
-	Name       string            `json:"name"`
-	Parameters map[string]string `json:"parameters"`
+	Lifespan   int                    `json:"lifespan"`
+	Name       string                 `json:"name"`
+	Parameters map[string]interface{} `json:"parameters"`
 }
 
 // Location takes latitude and longitude
